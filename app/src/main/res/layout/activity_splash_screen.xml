@@ -7,10 +7,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fr.develop.android.tbrnx.musicvibe.SplashScreen">
+    android:background="@drawable/splash_bg"
+    tools:context=".activities.SplashScreen">
 
-    <TextView
+    <fr.develop.android.tbrnx.musicvibe.utils.customui.UbuntuTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp" />
+
+    <fr.develop.android.tbrnx.musicvibe.utils.customui.UbuntuTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/app_leitmotiv"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
