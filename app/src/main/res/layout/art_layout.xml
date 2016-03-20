@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="20dp"
+    android:layout_margin="6dp"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/track_art"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:contentDescription="art_album"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_cover_art"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/softColor"
+        android:padding="3dp"
+        >
+
+        <fr.develop.android.tbrnx.musicvibe.utils.customui.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Track"
+            android:maxLines="1"
+            android:id="@+id/track_name" />
+
+        <fr.develop.android.tbrnx.musicvibe.utils.customui.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Details"
+            android:maxLines="1"
+            android:id="@+id/track_details" />
+    </LinearLayout>
+
+</LinearLayout>
